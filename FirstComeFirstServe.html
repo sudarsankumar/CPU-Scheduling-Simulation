@@ -33,7 +33,7 @@
                     <div class="container-table100">
                         <div class="wrap-table100">
                             <div class="table100">
-                                <table border="1">
+                                <table border="1" id="table" class="table">
                                     <thead>
                                         <tr class="table100-head">
                                             <th class="column1">Process Name</th>
@@ -83,7 +83,9 @@
                         </div>
                     </div>
                 </div>
-                <br/>
+                <br/><br/>
+                <button type="button" class="addBtn" onclick="addRow();">Add Row</button>
+                <br/><br/>
                 <div style="width: 95%">
                     <div id="gantt_chart"></div>
                 </div>

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function loadValues(){
     $('input').each(function(){
         $(this).val(Math.floor(Math.random() * 10) + 1);
     });
@@ -58,8 +58,8 @@ $(document).ready(function(){
     $('#methods').change(function(){
     location.href = $(this).val();
     })
-});
-
+}
+$(document).ready(loadValues);
 function GET_BURSTTIME_TOTAL(){
     var total = 0.0;
     $('.burst_time').each(function(index){
@@ -117,4 +117,23 @@ function checkValues(){
     });
 
     return flag;
+}
+function addRow()
+{
+    var lastRow = $('#table tr:last');
+    var table = document.getElementById('table')
+    let row = '<tr><td>P' 
+    + (num + 1)
+    + '</td><td><input data-process=P'
+    + (num+1)
+    + ' type="text" class="arrival_time" /></td><td><input data-process=P'
+    + (num+1)
+    + ' type="text" class="burst_time" /></td><td><span class="TAT" id="P'
+    + (num+1)
+    + '_TAT"></span></td><td><span class="WT" id="P'
+    + (num+1)
+    + '_WT"></span></td></tr>';
+    lastRow.before(row)
+    num+=1
+    loadValues()
 }
