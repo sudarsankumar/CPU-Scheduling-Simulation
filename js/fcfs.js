@@ -134,6 +134,7 @@ function addRow()
     + '_TAT"></span></td><td><span class="WT" id="P'
     + (num+1)
     + '_WT"></span></td></tr>';
+    console.log(row)
     lastRow.before(row)
     num+=1
     loadValues()
