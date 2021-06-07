@@ -1,3 +1,4 @@
+var num = 4
 function loadValues(){
     $('input').each(function(){
         $(this).val(Math.floor(Math.random() * 10) + 1);
