@@ -1,5 +1,5 @@
 # CPU-Scheduling-Simulation
-This is a simple project done using html and css which gives you a glassmorphism effect with responsive layout
+This is a simple project done using html and css and js to illustrate cpu scheduling
 ## Table Of Contents
 - [Installation](#installation)
 - [Sample Link](#sample-link)
